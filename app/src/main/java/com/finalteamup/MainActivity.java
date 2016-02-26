@@ -1,14 +1,11 @@
 package com.finalteamup;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -50,17 +47,17 @@ public class MainActivity extends AppCompatActivity {
                 }*/
                 if (menuItem.getItemId() == R.id.your_games) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView, new PrimaryFragment()).commit();
+                    fragmentTransaction.replace(R.id.containerView, new YourGamesFragment()).commit();
                 }
 
                 if (menuItem.getItemId() == R.id.nearby_games) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView, new SocialFragment()).commit();
+                    fragmentTransaction.replace(R.id.containerView, new NearbyGamesFragment()).commit();
                 }
 
                 if (menuItem.getItemId() == R.id.invite_players) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView, new UpdatesFragment()).commit();
+                    fragmentTransaction.replace(R.id.containerView, new InvitePlayersFragment()).commit();
                 }
 
                 return false;
