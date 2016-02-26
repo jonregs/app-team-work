@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Your Games"
+        android:id="@+id/your_games"/>
+
+    <item android:title="Nearby Games"
+        android:id="@+id/nearby_games"/>
+
+    <item android:title="Invite Players"
+        android:id="@+id/invite_players"/>
+
+</menu>
