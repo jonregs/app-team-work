@@ -11,11 +11,11 @@ import android.view.ViewGroup;
 /**
  * Created by Jonathan on 2/17/2016.
  */
-public class UpdatesFragment extends Fragment {
+public class InvitePlayersFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.updates_layout,null);
+        return inflater.inflate(R.layout.invite_players_fragment_layout,null);
     }
 }
